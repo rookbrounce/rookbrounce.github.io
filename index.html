@@ -80,7 +80,7 @@ ga('send', 'pageview');
     <article id="post-how-to-install-and-deploy-middleman-on-vps" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/how-to-install-and-deploy-middleman-on-vps/" class="article-date">
-  <time datetime="2016-07-09T13:43:37.767Z" itemprop="datePublished">2016-07-09</time>
+  <time datetime="2016-07-09T13:50:33.019Z" itemprop="datePublished">2016-07-09</time>
 </a>
     
   </div>
@@ -91,7 +91,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/how-to-install-and-deploy-middleman-on-vps/">How to install and deploy Middleman on VPS</a>
+      <a class="article-title" href="/how-to-install-and-deploy-middleman-on-vps/">How to install and deploy Middleman on server</a>
     </h1>
   
 
@@ -118,7 +118,7 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd your_blog_name</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">middleman server</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">middleman build</div></pre></td></tr></table></figure>
-<h2 id="Deploy-on-VPS"><a href="#Deploy-on-VPS" class="headerlink" title="Deploy on VPS"></a>Deploy on VPS</h2><p>We need an additional gem to deploy - <code>middleman-deploy</code></p>
+<h2 id="Deploy-on-server"><a href="#Deploy-on-server" class="headerlink" title="Deploy on server"></a>Deploy on server</h2><p>We need an additional gem to deploy - <code>middleman-deploy</code></p>
 <p><a href="https://github.com/middleman-contrib/middleman-deploy" target="_blank" rel="external">https://github.com/middleman-contrib/middleman-deploy</a></p>
 <p>Add the line in your Gemfile Middleman-project:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem &apos;middleman-deploy&apos;, github: &apos;middleman-contrib/middleman-deploy&apos;, branch: &apos;master&apos;</div></pre></td></tr></table></figure>
@@ -126,13 +126,13 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">activate :deploy do |deploy|</div><div class="line">  deploy.deploy_method   = :sftp</div><div class="line">  deploy.host            = &apos;you_serv_api&apos;</div><div class="line">  deploy.port            = 22</div><div class="line">  deploy.path            = &apos;/work/your_path&apos;</div><div class="line">end</div></pre></td></tr></table></figure>
 <p>Ok, you can save the file and close it.</p>
 <p>There are still a few commands to do:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git remote add vps root@ip_address:repo/site_name.git</div><div class="line">middleman build</div><div class="line">middleman deploy</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git remote add server root@ip_address:repo/site_name.git</div><div class="line">middleman build</div><div class="line">middleman deploy</div></pre></td></tr></table></figure>
 <p>Now you can keep all your projects, built on a design static websites on the same server and save some money on this.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/how-to-install-and-deploy-middleman-on-vps/" data-id="ciqf82dzt0003vzm616wc5ryo" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/how-to-install-and-deploy-middleman-on-vps/" data-id="ciqf8b1nb0003asm689ruikdf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -173,7 +173,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/ubuntu32drop/" data-id="ciqf82dzr0002vzm65o1pyhjr" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/ubuntu32drop/" data-id="ciqf8b1n90002asm6bxlughk9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,7 +218,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/hello-world/" data-id="ciqf82dzo0001vzm62601cn2h" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/hello-world/" data-id="ciqf8b1n60001asm6hi05feog" class="article-share-link">Share</a>
       
       
     </footer>
@@ -259,7 +259,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/go17rc/" data-id="ciqf82dzi0000vzm60dnpu551" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/go17rc/" data-id="ciqf8b1n10000asm6p07erfq0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -299,7 +299,7 @@ ga('send', 'pageview');
       <ul>
         
           <li>
-            <a href="/how-to-install-and-deploy-middleman-on-vps/">How to install and deploy Middleman on VPS</a>
+            <a href="/how-to-install-and-deploy-middleman-on-vps/">How to install and deploy Middleman on server</a>
           </li>
         
           <li>
