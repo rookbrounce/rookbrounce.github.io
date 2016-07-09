@@ -80,7 +80,7 @@ ga('send', 'pageview');
     <article id="post-how-to-install-and-deploy-middleman-on-server" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/how-to-install-and-deploy-middleman-on-server/" class="article-date">
-  <time datetime="2016-07-09T13:54:15.420Z" itemprop="datePublished">2016-07-09</time>
+  <time datetime="2016-07-09T15:10:49.635Z" itemprop="datePublished">2016-07-09</time>
 </a>
     
   </div>
@@ -99,7 +99,7 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Middleman - simple <a href="https://github.com/middleman/middleman" target="_blank" rel="external">open-source</a> static web site generator.</p>
+        <p>Middleman - simple <a href="https://github.com/middleman/middleman">open-source</a> static web site generator.</p>
 <p>Why middleman? because:</p>
 <ul>
 <li>More than 5000 stars on github</li>
@@ -108,31 +108,57 @@ ga('send', 'pageview');
 <li>More than 200 releases</li>
 <li>Latest release May 2016</li>
 </ul>
-<h3 id="Top-2-contributors"><a href="#Top-2-contributors" class="headerlink" title="Top 2 contributors:"></a>Top 2 contributors:</h3><p><img src="/images/middleman-contributor.png" alt=""></p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><h4 id="Step-1-installation-process"><a href="#Step-1-installation-process" class="headerlink" title="Step 1 (installation process)"></a>Step 1 (installation process)</h4><p>Requirements:</p>
-<ul>
-<li>gem (<a href="https://rubygems.org/" target="_blank" rel="external">RubyGems</a>)</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install middleman</div></pre></td></tr></table></figure>
-<h4 id="Step-2-init-process"><a href="#Step-2-init-process" class="headerlink" title="Step 2 (init process )"></a>Step 2 (init process )</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">middleman init your_blog_name</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd your_blog_name</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">middleman server</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">middleman build</div></pre></td></tr></table></figure>
-<h2 id="Deploy-on-server"><a href="#Deploy-on-server" class="headerlink" title="Deploy on server"></a>Deploy on server</h2><p>We need an additional gem to deploy - <code>middleman-deploy</code></p>
-<p><a href="https://github.com/middleman-contrib/middleman-deploy" target="_blank" rel="external">https://github.com/middleman-contrib/middleman-deploy</a></p>
-<p>Add the line in your Gemfile Middleman-project:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem &apos;middleman-deploy&apos;, github: &apos;middleman-contrib/middleman-deploy&apos;, branch: &apos;master&apos;</div></pre></td></tr></table></figure>
-<p>Run <code>bundle install</code> . It will install the <code>gem</code> we have added, and in the meantime we will edit <code>config.rb</code> file by placing  lines:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">activate :deploy do |deploy|</div><div class="line">  deploy.deploy_method   = :sftp</div><div class="line">  deploy.host            = &apos;you_serv_api&apos;</div><div class="line">  deploy.port            = 22</div><div class="line">  deploy.path            = &apos;/work/your_path&apos;</div><div class="line">end</div></pre></td></tr></table></figure>
-<p>Ok, you can save the file and close it.</p>
-<p>There are still a few commands to do:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git remote add server root@ip_address:repo/site_name.git</div><div class="line">middleman build</div><div class="line">middleman deploy</div></pre></td></tr></table></figure>
-<p>Now you can keep all your projects, built on a design static websites on the same server and save some money on this.</p>
-
+        
+          <p class="article-more-link">
+            <a href="/how-to-install-and-deploy-middleman-on-server/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/how-to-install-and-deploy-middleman-on-server/" data-id="ciqf8i31d0002g1m6s2zhwugr" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/how-to-install-and-deploy-middleman-on-server/" data-id="ciqfb401100027qm6drjparqp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go17rc" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/go17rc/" class="article-date">
+  <time datetime="2016-07-09T15:08:51.816Z" itemprop="datePublished">2016-07-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/go17rc/">Go 1.7 Release Candidate 1 is released!</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="images/gopher.jpg" alt=""></p>
+<p>Try it: <a href="https://groups.google.com/forum/#!topic/golang-nuts/K1gZPWaCI3I">Golang Nuts</a><br>
+        
+          <p class="article-more-link">
+            <a href="/go17rc/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://rookbrounce.github.io/go17rc/" data-id="ciqfb400n00007qm6ik6q3e78" class="article-share-link">Share</a>
       
       
     </footer>
@@ -173,7 +199,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/ubuntu32drop/" data-id="ciqf8i31f0003g1m6ohbaaq3k" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/ubuntu32drop/" data-id="ciqfb401400037qm61oz5n9zp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,48 +244,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/hello-world/" data-id="ciqf8i31a0001g1m6hluqwyn4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-go17rc" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/go17rc/" class="article-date">
-  <time datetime="2016-07-08T23:04:28.910Z" itemprop="datePublished">2016-07-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/go17rc/">Go 1.7 Release Candidate 1 is released!</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Try it: <a href="https://groups.google.com/forum/#!topic/golang-nuts/K1gZPWaCI3I">Golang Nuts</a><br>
-        
-          <p class="article-more-link">
-            <a href="/go17rc/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://rookbrounce.github.io/go17rc/" data-id="ciqf8i3130000g1m6pi79zvmo" class="article-share-link">Share</a>
+      <a data-url="https://rookbrounce.github.io/hello-world/" data-id="ciqfb400w00017qm62t5u7m7v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -303,15 +288,15 @@ ga('send', 'pageview');
           </li>
         
           <li>
+            <a href="/go17rc/">Go 1.7 Release Candidate 1 is released!</a>
+          </li>
+        
+          <li>
             <a href="/ubuntu32drop/">Ubuntu May Be About To Drop 32-bit builds</a>
           </li>
         
           <li>
             <a href="/hello-world/">Hexo is amazing!</a>
-          </li>
-        
-          <li>
-            <a href="/go17rc/">Go 1.7 Release Candidate 1 is released!</a>
           </li>
         
       </ul>
