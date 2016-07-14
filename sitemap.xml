@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rookbrounce.github.io/about/index.html</loc>
+    
+    <lastmod>2016-07-14T20:30:27.059Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://rookbrounce.github.io/Beego-is-extremely-fast-and-reliable-Go-web-framework/</loc>
     
-    <lastmod>2016-07-14T17:26:01.746Z</lastmod>
+    <lastmod>2016-07-14T19:09:44.883Z</lastmod>
     
   </url>
   

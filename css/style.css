@@ -308,6 +308,10 @@ body {
 .widget dt {
   font-weight: bold;
 }
+.article-entry .fancybox img,
+.widget .fancybox img {
+  max-height: 300px;
+}
 #header {
   height: 300px;
   position: relative;
